@@ -2,7 +2,7 @@ import requests
 
 # 다음쇼핑 best100 제품 요청하기
 
-url = ""
+url = "https://shoppinghow.kakao.com/siso/p/api/bestRank/dispprodbest?vCateId=GMP&durationDays=30&count=100&_=1626140588318"
 
 with requests.Session() as s:
     r=s.get(url)

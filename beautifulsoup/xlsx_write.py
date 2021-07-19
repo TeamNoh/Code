@@ -2,7 +2,7 @@ from openpyxl import Workbook
 
 def write_excel_template(filename, sheetname, listdata):
     wb = Workbook()
-
+    
     # default sheet 활성화
     sheet1 = wb.active
 
