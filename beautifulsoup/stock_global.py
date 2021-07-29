@@ -2,8 +2,8 @@
 import requests 
 from bs4 import BeautifulSoup
 
-respons = requests.get("https://finance.naver.com/")
-soup = BeautifulSoup(respons.content, "html.parser")
+response = requests.get("https://finance.naver.com/")
+soup = BeautifulSoup(response.content, "html.parser")
 # print(soup.prettify)
 
 # #container > div.aside > div > div.aside_area.aside_sotck > table > tbody > tr

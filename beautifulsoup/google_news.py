@@ -14,6 +14,8 @@ soup = BeautifulSoup(response.content, 'html.parser')
 articles = soup.find_all("article")
 # print(articles)
 
+# h1 ~ h6로 시작하는 모든 태그
+
 # 뉴스 타이틀/기사 링크 주소/기사 작성자/기사 작성 시간
 for idx, article in enumerate(articles):
     # 뉴스 타이틀과 링크 추출

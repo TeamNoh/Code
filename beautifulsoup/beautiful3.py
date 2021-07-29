@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-with open("./beautiful/dormouse.html", "r") as f:
+with open("dormouse.html", "r") as f:
     html = f.read()
 
 soup = BeautifulSoup(html, "html.parser")

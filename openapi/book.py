@@ -2,6 +2,7 @@
 import requests
 import pprint
 from openpyxl import Workbook
+import re
 
 # 엑셀 저장
 wb = Workbook()
@@ -44,6 +45,8 @@ for idx in range(3):
     # pprint.pprint(data)
     
     for item in data['items'] :
+        title = re.sub("<.*?>", "", item['title'])
+
         print(num, item['isbn'], item['title'], item['price'], item['discount'])
         sheet1.append([num, item['isbn'], item['title'], item['price'], item['discount']])
         num += 1
